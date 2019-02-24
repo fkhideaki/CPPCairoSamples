@@ -51,7 +51,7 @@ void triangle(cairo_t* cr)
 	cairo_move_to(cr, 100, 100);
 	cairo_line_to(cr, 100, 200);
 	cairo_line_to(cr, 200, 200);
-	cairo_line_to(cr, 100, 100);
+	cairo_close_path(cr);
 }
 
 void triangleStroke(cairo_t* cr)
